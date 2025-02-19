@@ -1,0 +1,236 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    color: green;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+ul i {
+    margin-right: 3px;
+}
+
+
+
+main {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pdf-wrapper {
+    width: 40%;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 600px;
+}
+
+.pdf-wrapper-details {
+    margin-left: 30px;
+    width: 40%;
+}
+
+.pdf-wrapper-title {
+    margin-top: 36px;
+    font-weight: bold;
+    color: green;
+    border-bottom: 1px solid green;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+}
+
+.pdf-wrapper-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.border {
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 12px 3px 3px 3px;
+    padding: 4px 10px;
+}
+
+.border2 {
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 4px 10px;
+}
+
+.border3 {
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 4px 10px 4px 4px;
+}
+
+.html {
+    color: #E5532F;
+    border: 2px solid #E5532F;
+}
+
+.css {
+    color: #1876BA;
+    border: 2px solid #1876BA;
+}
+
+.js {
+    color: #ffd448;
+    border: 2px solid #ffd448;
+}
+
+.php {
+    color: #7B7FB6;
+    border: 2px solid #7B7FB6;
+}
+
+.figma {
+    color: #8200ff;
+    border: 2px dotted #8200ff;
+}
+
+.photoshop {
+    color: #003a6d;
+    border: 2px dotted #003a6d;
+}
+
+.illust {
+    color: #650b0b;
+    border: 2px dotted #650b0b;
+}
+
+.xd {
+    color: #db00a8;
+    border: 2px dotted #db00a8;
+}
+
+.wordpress {
+    color: #2A789D;
+    border-left: 3px solid #2A789D;
+}
+
+.blog {
+    color: #C40F31;
+    border-left: 3px solid #C40F31;
+}
+
+.gf {
+    color: #c69139;
+    border-left: 3px solid #c69139;
+}
+.ec{
+    color: #004a2c;
+    border-left: 3px solid #004a2c;
+}
+.splide {
+    margin: 60px 0;
+}
+
+.splide__arrow {
+    background: green !important;
+}
+
+.splide__arrow svg {
+    fill: white !important;
+}
+
+.splide__slide {
+    overflow: hidden;
+    width: 100%;
+    /* 必要に応じて調整 */
+    height: 300px;
+    /* お好みの高さに設定 */
+}
+
+.splide__slide img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 画像をトリミングして均一に */
+}
+
+.splide__arrows--ttb .splide__arrow--prev {
+    top: -30px !important;
+}
+
+.splide__arrows--ttb .splide__arrow--next {
+    bottom: -30px !important;
+}
+
+.splide__pagination--ttb {
+    right: -20px !important;
+}
+
+.top-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.111);
+    transition: background-color 0.3s linear;
+}
+
+.top-button:hover {
+    background: none;
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        margin: 20px 0
+    }
+
+    .profile img {
+        width: 60px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .pdf-wrapper {
+        width: 100%;
+        margin-bottom: 50px;
+        ;
+    }
+
+    .pdf-wrapper-details {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .splide__pagination--ttb {
+        right: 0 !important;
+    }
+
+    .top-button {
+        top: auto;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,242 @@
+body {
+    background: #00dbb7;
+    font-family: "Outfit", "Kiwi Maru";
+    cursor: crosshair;
+}
+
+header {
+    margin: 80px auto 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main a {
+    cursor: pointer;
+}
+
+.profile {
+    img {
+        width: 100px;
+        border-radius: 50%;
+        filter: drop-shadow(3px 3px 4px #00b27f);
+    }
+}
+
+.name {
+    color: #00732866;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 3px;
+    padding: 10px;
+    i {
+        width: 20px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    background: #00dbb7;
+    box-shadow: 5px 5px 23px #00ba9c,
+        -5px -5px 23px #00fcd2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+
+    .button-description {
+        color: white;
+        font-size: 10px;
+        letter-spacing: 3px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-style: normal;
+        z-index: 100;
+    }
+
+    .button-description-text {
+        position: absolute;
+        left: 40px;
+        top: 80px;
+        color: #007f6a;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    i,
+    img {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    i {
+        font-size: 140px;
+        z-index: 100;
+    }
+
+    img {
+        width: 140px;
+    }
+}
+
+.buttons:hover {
+    background: #00dbb7;
+    box-shadow: inset 5px 5px 23px #00ba9c,
+        inset -5px -5px 23px #00fcd2;
+    transform: scale(1.02);
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    color: #007328;
+}
+
+.icon i {
+    font-size: 18px !important;
+    position: static;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.fluid {
+    text-align: center;
+}
+
+.fluid {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 61% 39% 16% 84% / 57% 72% 28% 43%;
+    animation: fluid-anim 20s infinite;
+    background-size: cover;
+    transition: background-size 0.5s ease, background-position 0.5s ease;
+    background-position: center;
+}
+
+.fm .fluid {
+    background-image: url(images/back-coral2.png);
+}
+
+.samurai .fluid {
+    background-image: url(images/back-youtube.png);
+}
+
+.hosokawa .fluid {
+    background-image: url(images/back-bis.png);
+}
+
+.goal .fluid {
+    background-image: url(images/back-spring.png);
+}
+
+.atmos .fluid {
+    background-image: url(images/back-air.jpeg);
+}
+
+.ys .fluid {
+    background-image: url(images/back-shizukana.png);
+}
+
+@keyframes fluid-anim {
+    0% {
+        border-radius: 65% 35% 55% 45% / 55% 50% 55% 45%;
+    }
+
+    12.5% {
+        border-radius: 60% 75% 40% 80% / 70% 70% 60% 65%;
+    }
+
+    25% {
+        border-radius: 55% 95% 65% 90% / 75% 65% 85% 70%;
+    }
+
+    37.5% {
+        border-radius: 60% 40% 50% 45% / 60% 40% 60% 40%;
+    }
+
+    50% {
+        border-radius: 55% 95% 65% 90% / 75% 65% 85% 70%;
+    }
+
+    62.5% {
+        border-radius: 60% 40% 50% 45% / 60% 40% 60% 40%;
+    }
+
+    75% {
+        border-radius: 60% 75% 40% 80% / 70% 70% 60% 65%;
+    }
+
+    87.5% {
+        border-radius: 40% 60% 55% 45% / 50% 60% 40% 50%;
+    }
+
+    100% {
+        border-radius: 65% 35% 55% 45% / 55% 50% 55% 45%;
+    }
+}
+
+.buttons>img {
+    z-index: 100;
+}
+
+.browser {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    i {
+        position: static;
+        font-size: 20px;
+    }
+}
+
+footer {
+    color: #008e77;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+}
+@media screen and (max-width:1024px) {
+    header {
+        margin: 20px 0 0 0;
+    }
+
+    .profile img {
+        width: 60px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+
+}
