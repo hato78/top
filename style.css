@@ -140,27 +140,27 @@ a {
 }
 
 .fm .fluid {
-    background-image: url(images/back-coral2.png);
+    background-image: url(top-images/back-coral2.png);
 }
 
 .samurai .fluid {
-    background-image: url(images/back-youtube.png);
+    background-image: url(top-images/back-youtube.png);
 }
 
 .hosokawa .fluid {
-    background-image: url(images/back-bis.png);
+    background-image: url(top-images/back-bis.png);
 }
 
 .goal .fluid {
-    background-image: url(images/back-spring.png);
+    background-image: url(top-images/back-spring.png);
 }
 
 .atmos .fluid {
-    background-image: url(images/back-air.jpeg);
+    background-image: url(top-images/back-air.jpeg);
 }
 
 .ys .fluid {
-    background-image: url(images/back-shizukana.png);
+    background-image: url(top-images/back-shizukana.png);
 }
 
 @keyframes fluid-anim {
