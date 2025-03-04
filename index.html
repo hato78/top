@@ -5,124 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png" id="favicon">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="page.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>yuichiro hato</title>
 </head>
-
 <body>
-    <header>
-        <div class="profile">
-            <img src="logo/cat.png">
-        </div>
-        <div class="name">
-            Yuichiro Hato
-        </div>
-    </header>
-    <main>
-        <a target="_blank" href="/fm">
-            <div class="buttons fm">
-                <img src="logo/fm.png">
-                <div class="button-description">
-                    2024.6 -
-                </div>
-                <div class="fluid"></div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                </div>
+    <div id="app">
+        <div class="custom-cursor"></div>
+        <header>
+            <div class="name">
+                Yuichiro Hato
             </div>
-        </a>
-        <a target="_blank" href="/samurai">
-            <div class="buttons samurai">
-                <img src="logo/samurai.png">
-                <div class="button-description">
-                    2024.4 -
+        </header>
+
+        <main>
+            <!-- ホーム画面 -->
+            <div v-if="currentPage === 'home'" class="main">
+                <div v-for="project in projects" :key="project.id" class="buttons" :class="project.id"
+                    @click="loadPage(project)">
+                    <img :src="project.logo">
+                    <div class="button-description">
+                        {{ project.date }}
+                    </div>
+                    <div class="fluid"></div>
+                    <div class="icon">
+                        <i v-for="icon in project.icons" :key="icon" :class="icon"></i>
+                    </div>
                 </div>
-                <div class="fluid"></div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-php"></i>
-                </div>
+
             </div>
-        </a>
-        <a target="_blank" href="/hosokawa">
-            <div class="buttons hosokawa">
-                <img src="logo/hosokawa.png">
-                <div class="button-description">
-                    2023.5 - 2024.5
-                </div>
-                <div class="fluid"></div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-php"></i>
-                </div>
+
+            <!-- 読み込んだ HTML を表示 -->
+            <div v-else class="page-content" v-html="loadedContent"></div>
+
+            <!-- 戻るボタン -->
+            <div class="top-button" v-if="currentPage !== 'home'" @click="changePage('home')">
+                TOP
             </div>
-        </a>
-        <a target="_blank" href="/goal">
-            <div class="buttons goal">
-                <img src="logo/goal.png">
-                <div class="button-description">
-                    2023.1 - 2024.9
-                </div>
-                <div class="fluid"></div>
-                <div class="button-description-text">
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-php"></i>
-                </div>
-            </div>
-        </a>
-        <a target="_blank" href="/atmos">
-            <div class="buttons atmos">
-                <img src="logo/atmos.png">
-                <div class="button-description">
-                    2022.11 - 2023.1
-                </div>
-                <div class="fluid"></div>
-                <div class="button-description-text">
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                </div>
-            </div>
-        </a>
-        <a target="_blank" href="/ys">
-            <div class="buttons ys">
-                <img src="logo/ys.png">
-                <div class="button-description">
-                    2020.11 - 2022.9
-                </div>
-                <div class="fluid"></div>
-                <div class="icon">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-php"></i>
-                </div>
-            </div>
-        </a>
-    </main>
-    <footer>
-        <i class="fa-regular fa-copyright"></i> 2025 yuichiro hato | All Rights Reserved
-    </footer>
+        </main>
+
+        <footer>
+            <div><i class="fa-regular fa-copyright"></i> 2025 yuichiro hato | All Rights Reserved</div>
+            <div class="note">This site was loosely designed with <span class="figma-color">Figma</span> and built with<span class="vue-color"> Vue.js</span>.</div>
+        </footer>
+    </div>
     <script src="script.js"></script>
+    <script src="vue-script.js"></script>
 </body>
 
 </html>

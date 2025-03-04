@@ -29,6 +29,10 @@ a {
 
 .pdf-wrapper {
     width: 40%;
+    max-height: 600px;
+}
+.pdf-wrapper img{
+    height: 600px;
 }
 
 iframe {
@@ -61,12 +65,14 @@ iframe {
     margin-right: 5px;
     border-radius: 12px 3px 3px 3px;
     padding: 4px 10px;
+    margin-bottom: 10px;
 }
 
 .border2 {
     font-weight: bold;
     margin-right: 5px;
     padding: 4px 10px;
+    margin-bottom: 10px;
 }
 
 .border3 {
@@ -133,8 +139,9 @@ iframe {
     color: #004a2c;
     border-left: 3px solid #004a2c;
 }
-.splide {
-    margin: 60px 0;
+.zen{
+    color: #00100a;
+    border-left: 3px solid #00100a;
 }
 
 .splide__arrow {
