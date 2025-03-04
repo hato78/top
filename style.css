@@ -221,6 +221,49 @@ a {
         font-size: 20px;
     }
 }
+.splide {
+    visibility: hidden;
+    margin: 0 auto;
+  }
+  .splide.is-initialized {
+    visibility: visible;
+  }
+.splide__arrow {
+    background: green !important;
+}
+
+.splide__arrow svg {
+    fill: white !important;
+}
+
+.splide__slide {
+    overflow: hidden;
+    width: 100%;
+    /* 必要に応じて調整 */
+    height: 300px;
+    /* お好みの高さに設定 */
+}
+
+.splide__slide img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 画像をトリミングして均一に */
+}
+
+.splide__arrows--ttb .splide__arrow--prev {
+    top: -30px !important;
+}
+
+.splide__arrows--ttb .splide__arrow--next {
+    bottom: -30px !important;
+}
+
+.splide__pagination--ttb {
+    right: -20px !important;
+}
+
 
 footer {
         display: flex;
