@@ -143,7 +143,12 @@ iframe {
     color: #00100a;
     border-left: 3px solid #00100a;
 }
-
+.splide {
+    visibility: hidden;
+  }
+  .splide.is-initialized {
+    visibility: visible;
+  }
 .splide__arrow {
     background: green !important;
 }
