@@ -1,11 +1,10 @@
 body {
     background: #00dbb7;
     font-family: "Outfit", "Kiwi Maru";
-    cursor: crosshair;
 }
 
 header {
-    margin: 80px auto 80px auto;
+    margin: 80px auto 60px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +14,11 @@ header {
 main a {
     cursor: pointer;
 }
-
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .profile {
     img {
         width: 100px;
@@ -25,7 +28,7 @@ main a {
 }
 
 .name {
-    color: #00732866;
+    color: #0073282b;
     font-weight: bold;
     font-size: 32px;
     display: flex;
@@ -66,7 +69,7 @@ a {
     transition: box-shadow 0.5s ease, transform 0.5s ease;
 
     .button-description {
-        color: white;
+        color: #007328;
         font-size: 10px;
         letter-spacing: 3px;
         position: absolute;
@@ -140,27 +143,27 @@ a {
 }
 
 .fm .fluid {
-    background-image: url(top-images/back-coral2.png);
+    background-image: url(top-images/top-fm.webp);
 }
 
 .samurai .fluid {
-    background-image: url(top-images/back-youtube.png);
+    background-image: url(top-images/top-samurai.webp);
 }
 
 .hosokawa .fluid {
-    background-image: url(top-images/back-bis.png);
+    background-image: url(top-images/top-hosokawa.webp);
 }
 
 .goal .fluid {
-    background-image: url(top-images/back-spring.png);
+    background-image: url(top-images/top-goal.webp);
 }
 
 .atmos .fluid {
-    background-image: url(top-images/back-air.jpeg);
+    background-image: url(top-images/top-atmos.webp);
 }
 
 .ys .fluid {
-    background-image: url(top-images/back-shizukana.png);
+    background-image: url(top-images/top-ys.webp);
 }
 
 @keyframes fluid-anim {
@@ -220,11 +223,32 @@ a {
 }
 
 footer {
-    color: #008e77;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        color: #008e77;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 50px;
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap-reverse;
+    .note{
+        margin-bottom: 30px;
+        border: 1px solid green;
+        padding: 5px;
+        border-radius: 3px;
+        letter-spacing: 1px;
+    }
+    .vue-color{
+        font-weight: bold;
+    }
+    .figma-color{
+        font-weight: bold;
+    }
 }
+
 @media screen and (max-width:1024px) {
     header {
         margin: 20px 0 0 0;
