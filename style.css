@@ -67,6 +67,7 @@ a {
     position: relative;
     margin: 20px;
     transition: box-shadow 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
 
     .button-description {
         color: #007328;
@@ -263,7 +264,10 @@ a {
 .splide__pagination--ttb {
     right: -20px !important;
 }
-
+.splide__track {
+    overflow: hidden;
+  }
+  
 
 footer {
         display: flex;

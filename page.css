@@ -161,6 +161,7 @@ iframe {
     color: white;
     background: rgba(255, 255, 255, 0.111);
     transition: background-color 0.3s linear;
+    cursor: pointer;
 }
 
 .top-button:hover {
