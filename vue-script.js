@@ -22,7 +22,7 @@ const { createApp } = Vue;
                 },
                 async loadPage(project) {
                     this.currentPage = project.id;
-                    this.loadedContent = '<p>Loading...</p>'; // ローディング表示
+                    this.loadedContent = '<p>Loading...<i class="fa-solid fa-seedling"></i></p>'; // ローディング表示
 
                     try {
                         const response = await fetch(project.file);
