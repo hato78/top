@@ -244,6 +244,7 @@ a {
     max-height: 100% !important;
     /* お好みの高さに設定 */
     margin: auto;
+    display: flex;
 }
 
 .splide__slide img {
