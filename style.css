@@ -245,13 +245,6 @@ a {
     /* お好みの高さに設定 */
 }
 
-.splide__slide img {
-    border-radius: 10px;
-    max-width: 300px;
-    height: 100%;
-    object-fit: contain;
-    /* 画像をトリミングして均一に */
-}
 
 .splide__arrows--ttb .splide__arrow--prev {
     top: -30px !important;
