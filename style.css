@@ -238,8 +238,8 @@ a {
 }
 
 .splide__slide {
-    overflow: hidden;
-    width: 100%;
+    overflow: hidden !important;
+    width: 100% !important;
     /* 必要に応じて調整 */
     max-height: 300px;
     /* お好みの高さに設定 */
