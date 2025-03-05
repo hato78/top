@@ -237,13 +237,6 @@ a {
     fill: white !important;
 }
 
-.splide__slide {
-    overflow: hidden;
-    width: 100%;
-    /* 必要に応じて調整 */
-    height: 300px;
-    /* お好みの高さに設定 */
-}
 
 
 .splide__arrows--ttb .splide__arrow--prev {
