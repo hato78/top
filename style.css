@@ -243,6 +243,7 @@ a {
     /* 必要に応じて調整 */
     max-height: 300px;
     /* お好みの高さに設定 */
+    margin: auto;
 }
 
 .splide__slide img {
@@ -251,6 +252,10 @@ a {
     max-height: 300px;
     object-fit: contain;
     /* 画像をトリミングして均一に */
+}
+
+.splide__pagination{
+    bottom: 10px !important;
 }
 
 .splide__arrows--ttb .splide__arrow--prev {
