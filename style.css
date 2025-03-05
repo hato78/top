@@ -247,7 +247,6 @@ a {
 }
 
 .splide__slide img {
-    border-radius: 10px;
     width: 100%;
     max-height: 300px;
     object-fit: contain;
