@@ -9,7 +9,7 @@ createApp({
                 { id: 'fm', name: 'FM Project', date: '2024.6 -', logo: 'logo/fm.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js'], file: 'fm.html' },
                 { id: 'samurai', name: 'Samurai Project', date: '2024.4 -', logo: 'logo/samurai.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js', 'fa-brands fa-php'], file: 'samurai.html' },
                 { id: 'hosokawa', name: 'Hosokawa Project', date: '2023.6 - 2024.6', logo: 'logo/hosokawa.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js', 'fa-brands fa-php'], file: 'hosokawa.html' },
-                { id: 'goal', name: 'Goal Project', date: '2023.1 - 2024.9', logo: 'logo/goal.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js', 'fa-brands fa-php'], file: 'goal.html' },
+                { id: 'goal', name: 'Goal Project', date: '2023.2 - 2024.9', logo: 'logo/goal.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js', 'fa-brands fa-php'], file: 'goal.html' },
                 { id: 'atmos', name: 'Atmos Project', date: '2022.11 - 2023.1', logo: 'logo/atmos.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js'], file: 'atmos.html' },
                 { id: 'ys', name: 'YS Project', date: '2020.11 - 2022.9', logo: 'logo/ys.png', icons: ['fa-brands fa-html5', 'fa-brands fa-css', 'fa-brands fa-square-js', 'fa-brands fa-php'], file: 'ys.html' },
             ]

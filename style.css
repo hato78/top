@@ -224,7 +224,7 @@ a {
 }
 .splide {
     visibility: hidden;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
   }
   .splide.is-initialized {
     visibility: visible;
