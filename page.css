@@ -37,7 +37,7 @@ iframe {
   height: 600px;
 }
 
-.pdf-wrapper button {
+.pdf-wrapper a {
   display: none;
 }
 
