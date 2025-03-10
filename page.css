@@ -1,215 +1,236 @@
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    color: green;
-    letter-spacing: 1px;
-    line-height: 28px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  color: green;
+  letter-spacing: 1px;
+  line-height: 28px;
 }
 
 ul i {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
-
-
 main {
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-
-.pdf-wrapper img{
-    height: 450px;
-    border-radius: 16px;
+.pdf-wrapper img {
+  height: 450px;
+  border-radius: 16px;
 }
 
 iframe {
-    border-radius: 16px;
-    border: none;
-    width: 450px;
-    height: 600px;
+  border-radius: 16px;
+  border: none;
+  width: 450px;
+  height: 600px;
+}
+
+.pdf-wrapper button {
+  display: none;
 }
 
 .pdf-wrapper-details {
-    margin-left: 50px;
-    width: 450px;
+  margin-left: 50px;
+  width: 450px;
 }
 
 .pdf-wrapper-title {
-    margin-top: 36px;
-    font-weight: bold;
-    color: green;
-    border-bottom: 1px solid green;
-    padding-bottom: 2px;
-    margin-bottom: 15px;
+  margin-top: 36px;
+  font-weight: bold;
+  color: green;
+  border-bottom: 1px solid green;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
 }
 
 .pdf-wrapper-contents {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .border {
-    font-weight: bold;
-    margin-right: 5px;
-    border-radius: 12px 3px 3px 3px;
-    padding: 4px 10px;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+  border-radius: 12px 3px 3px 3px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
 }
 
 .border2 {
-    font-weight: bold;
-    margin-right: 5px;
-    padding: 4px 10px;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
 }
 
 .border3 {
-    font-weight: bold;
-    margin-right: 5px;
-    padding: 4px 10px 4px 4px;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 4px 10px 4px 4px;
 }
 
 .html {
-    color: #E5532F;
-    border: 2px solid #E5532F;
+  color: #e5532f;
+  border: 2px solid #e5532f;
 }
 
 .css {
-    color: #1876BA;
-    border: 2px solid #1876BA;
+  color: #1876ba;
+  border: 2px solid #1876ba;
 }
 
 .js {
-    color: #ffd448;
-    border: 2px solid #ffd448;
+  color: #ffd448;
+  border: 2px solid #ffd448;
 }
 
 .php {
-    color: #7B7FB6;
-    border: 2px solid #7B7FB6;
+  color: #7b7fb6;
+  border: 2px solid #7b7fb6;
 }
 
 .figma {
-    color: #8200ff;
-    border: 2px dotted #8200ff;
+  color: #8200ff;
+  border: 2px dotted #8200ff;
 }
 
 .photoshop {
-    color: #003a6d;
-    border: 2px dotted #003a6d;
+  color: #003a6d;
+  border: 2px dotted #003a6d;
 }
 
 .illust {
-    color: #650b0b;
-    border: 2px dotted #650b0b;
+  color: #650b0b;
+  border: 2px dotted #650b0b;
 }
 
 .xd {
-    color: #db00a8;
-    border: 2px dotted #db00a8;
+  color: #db00a8;
+  border: 2px dotted #db00a8;
 }
 
 .wordpress {
-    color: #2A789D;
-    border-left: 3px solid #2A789D;
+  color: #2a789d;
+  border-left: 3px solid #2a789d;
 }
 
 .blog {
-    color: #C40F31;
-    border-left: 3px solid #C40F31;
+  color: #c40f31;
+  border-left: 3px solid #c40f31;
 }
 
 .gf {
-    color: #c69139;
-    border-left: 3px solid #c69139;
+  color: #c69139;
+  border-left: 3px solid #c69139;
 }
-.ec{
-    color: #004a2c;
-    border-left: 3px solid #004a2c;
+.ec {
+  color: #004a2c;
+  border-left: 3px solid #004a2c;
 }
-.zen{
-    color: #00100a;
-    border-left: 3px solid #00100a;
+.zen {
+  color: #00100a;
+  border-left: 3px solid #00100a;
 }
 .top-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.568);
-    padding: 30px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: rgba(255, 255, 255, 0.111);
-    transition: all 0.15s linear;
-    transform-origin: top right;
-    cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.568);
+  padding: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.111);
+  transition: all 0.15s linear;
+  transform-origin: top right;
+  cursor: pointer;
 }
 
 .top-button:hover {
-    background: none;
-    width: 60px;
-    height: 60px;
+  background: none;
+  width: 60px;
+  height: 60px;
 }
 
-@media screen and (max-width:1024px) {
-    header {
-        margin: 20px 0
-    }
+@media screen and (max-width: 1024px) {
+  header {
+    margin: 20px 0;
+  }
 
-    .profile img {
-        width: 60px;
-    }
+  .profile img {
+    width: 60px;
+  }
 
-    .name {
-        font-size: 20px;
-    }
+  .name {
+    font-size: 20px;
+  }
 
-    .pdf-wrapper {
-        width: 100%;
-        margin-bottom: 50px;
-        margin:0 auto 50px auto;
-        text-align: center;
-    }
+  .pdf-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+  }
 
-    .pdf-wrapper-details {
-        width: 90%;
-        margin: 30px auto;
-    }
+  .pdf-wrapper-details {
+    width: 90%;
+    margin: 30px auto;
+  }
 
-    iframe {
-        width: 90%;
-        height: 400px;
-    }
+  iframe {
+    width: 90%;
+    height: 400px;
+  }
 
-    .splide__pagination--ttb {
-        right: 0 !important;
-    }
+  .splide__pagination--ttb {
+    right: 0 !important;
+  }
 
-    .top-button {
-        top: auto;
-        bottom: 20px;
-    }
-    .note{
-        width: 90%;
-        margin: 20px auto;
-    }
+  .top-button {
+    top: auto;
+    bottom: 20px;
+  }
+  .note {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pdf-wrapper iframe {
+    display: none;
+  }
+  .pdf-wrapper a {
+    display: block;
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #0000000f;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0px 1px 1px 0px #00642c3d;
+  }
 }
