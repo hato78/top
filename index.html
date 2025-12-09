@@ -1,60 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
     <link href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="page.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <title>yuichiro hato</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <title>Yuichiro Hato — Portfolio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-    <div id="app">
-        <div class="custom-cursor"></div>
-        <header>
-            <div class="name">
-                yuichiro hato
-            </div>
-        </header>
 
-        <main>
-            <!-- ホーム画面 -->
-            <div v-if="currentPage === 'home'" class="main">
-                <div v-for="project in projects" :key="project.id" class="buttons" :class="project.id"
-                    @click="loadPage(project)">
-                    <img :src="project.logo">
-                    <div class="button-description">
-                        {{ project.date }}
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <!-- ロゴは後で差し替え：img/logo-placeholder.png を用意 -->
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="Yuichiro Hato Logo" class="logo">
+                </a>
+            </div>
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skillset" class="nav-link">Skill Set</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="app" class="site-main">
+        <section class="hero">
+            <div class="container hero-inner">
+                <h2 class="eyebrow"><i class="fa-solid fa-id-card-clip"></i> I'm Yuichiro Hato,</h2>
+                <p class="lead">an engineer & designer based in Japan. &#128062;</p>
+            </div>
+        </section>
+        <div class="heading container"id="projects">
+            <h2>Projects</h2>
+        </div>
+        <section class="container grid" aria-label="Works">
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-momoland.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-momoland.jpg" alt="FreshGoods thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">MOMOLAND — HP</h3>
+                        <div class="meta">
+                            <span class="tag">2025</span>
+                            <span class="tag">WordPress</span>
+                        </div>
                     </div>
-                    <div class="fluid"></div>
-                    <div class="icon">
-                        <i v-for="icon in project.icons" :key="icon" :class="icon"></i>
+                </a>
+            </article>
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-fm.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-fm.jpg" alt="FreshGoods thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">F&M — Help Center</h3>
+                        <div class="meta">
+                            <span class="tag">2024-</span>
+                            <span class="tag">Zendesk</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-samurai.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-samurai.jpg" alt="samurai thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">Samurai — Instructor</h3>
+                        <div class="meta">
+                            <span class="tag">2024-</span>
+                            <span class="tag">Instructor</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-hosokawa.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-hosokawa.jpg" alt="SupportPlus thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">Hosokawa Construction — Corporate</h3>
+                        <div class="meta">
+                            <span class="tag">2023-2024</span>
+                            <span class="tag">Wordpress</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-goal.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-goal.jpg" alt="Campaign thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">Goal — Corporate</h3>
+                        <div class="meta">
+                            <span class="tag">2023-2024</span>
+                            <span class="tag">Wordpress</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-atmos.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-atmos.jpg" alt="Education Portal thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">atmos - EC</h3>
+                        <div class="meta">
+                            <span class="tag">2022</span>
+                            <span class="tag">gf.E</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card" data-appear>
+                <a class="card-link" href="projects-ys.html">
+                    <figure class="thumb">
+                        <img src="top-images/top-ys.jpg" alt="BrandSite thumbnail">
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="work-title">Y's Road — EC/Corporate</h3>
+                        <div class="meta">
+                            <span class="tag">2020-2022</span>
+                            <span class="tag">ec being/Wordpress</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </section>
+        <div class="heading container" id="skillset">
+            <h2>Skill Set</h2>
+        </div>
+        <section class="container grid skills" aria-label="skills">
+            <article class="card" data-appear>
+                <div class="card-body">
+                    <h3 class="work-title"><i class="fa-solid fa-compass-drafting"></i> Design</h3>
+                    <div class="meta">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Affinity</span>
+                        <span class="tag">Photoshop</span>
+                        <span class="tag">Illustrator</span>
                     </div>
                 </div>
-
+            </article>
+            <article class="card" data-appear>
+                <div class="card-body">
+                    <h3 class="work-title"><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                    <div class="meta">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">jQuery</span>
+                        <span class="tag">GSAP</span>
+                    </div>
+                </div>
+            </article>
+            <article class="card" data-appear>
+                <div class="card-body">
+                    <h3 class="work-title"><i class="fa-solid fa-database"></i> Backend</h3>
+                    <div class="meta">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </article>
+            <article class="card" data-appear>
+                <div class="card-body">
+                    <h3 class="work-title"><i class="fa-solid fa-cube"></i> Template Engine</h3>
+                    <div class="meta">
+                        <span class="tag">Curlybars</span>
+                        <span class="tag">Liquid</span>
+                    </div>
+                </div>
+            </article>
+            <article class="card" data-appear>
+                <div class="card-body">
+                    <h3 class="work-title"><i class="fa-solid fa-gear"></i> CMS/SaaS</h3>
+                    <div class="meta">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">ec being</span>
+                        <span class="tag">a-blog cms</span>
+                        <span class="tag">Zendesk</span>
+                        <span class="tag">Shopify</span>
+                        <span class="tag">gf.E</span>
+                        <span class="tag">Karte</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="site-footer">
+            <div class="container">
+                <small>© <span id="year"></span> Yuichiro Hato</small>
             </div>
-
-            <!-- 読み込んだ HTML を表示 -->
-            <div v-else class="page-content" v-html="loadedContent"></div>
-
-            <!-- 戻るボタン -->
-            <div class="top-button" v-if="currentPage !== 'home'" @click="changePage('home')">
-                TOP
-            </div>
-        </main>
-
-        <footer>
-            <div><i class="fa-regular fa-copyright"></i> 2025 yuichiro hato | All Rights Reserved</div>
-            <div class="note">This site was loosely designed with <span class="figma-color">Figma</span> and built with<span class="vue-color"> Vue.js</span>.</div>
         </footer>
-    </div>
-    <script src="vue-script.js"></script>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
