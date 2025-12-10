@@ -186,6 +186,9 @@ h1 {
   .splide__slide img {
     width: 100%;
   }
+  .hero-frame{
+    max-height: 300px;
+  }
 }
 
 .top-button {
