@@ -1,9 +1,10 @@
 /* work.css — detail page styles for navy theme */
-h1{
+h1 {
   width: min(1100px, 92%);
   margin: 30px auto 10px auto;
   color: #325b83;
 }
+
 .work-hero {
   width: min(1100px, 92%);
   padding: 1.6rem 0;
@@ -37,10 +38,10 @@ h1{
   flex-wrap: wrap;
 }
 
-.meta-block{
+.meta-block {
   border: 1px solid #1f4e7a;
-    padding: 14px;
-    border-radius: 10px;
+  padding: 14px;
+  border-radius: 10px;
 }
 
 .meta-block h4 {
@@ -75,7 +76,8 @@ h1{
 .fade-leave-to {
   opacity: 0;
 }
-.parent{
+
+.parent {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -101,25 +103,27 @@ h1{
   border-radius: 16px;
   max-height: 260px;
   max-width: 400px;
-  width: 100%;
 }
 
-.splide__arrow--next{
+.splide__arrow--next {
   right: 0;
 }
 
-.splide__arrow--prev{
+.splide__arrow--prev {
   left: 0;
 }
-.splide__pagination__page{
+
+.splide__pagination__page {
   height: 8px !important;
   width: 8px !important;
   margin: 6px;
 }
-.splide__pagination{
+
+.splide__pagination {
   bottom: auto !important;
   margin: 6px;
 }
+
 .scroll-hint-top {
   text-align: center;
   font-size: 12px;
@@ -131,10 +135,22 @@ h1{
 }
 
 @keyframes hintMove {
-  0%   { transform: translateX(-2px); opacity: 0.3; }
-  50%  { transform: translateX(0px); opacity: 1; }
-  100% { transform: translateX(-2px); opacity: 0.3; }
+  0% {
+    transform: translateX(-2px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-2px);
+    opacity: 0.3;
+  }
 }
+
 .scroll-hint-bottom {
   text-align: center;
   font-size: 12px;
@@ -146,21 +162,38 @@ h1{
 }
 
 @keyframes hintMove2 {
-  0%   { transform: translateY(-2px); opacity: 0.6; }
-  50%  { transform: translateY(2px); opacity: 1; }
-  100% { transform: translateY(-2px); opacity: 0.6; }
-}
-@media screen and (max-width:780px) { 
-   .parent{
-    flex-wrap: wrap;
-   }
+  0% {
+    transform: translateY(-2px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(2px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-2px);
+    opacity: 0.6;
+  }
 }
 
-.top-button{
+@media screen and (max-width:1080px) {
+  .parent {
+    flex-wrap: wrap;
+  }
+
+  .splide__slide img {
+    width: 100%;
+  }
+}
+
+.top-button {
   cursor: pointer;
   text-align: center;
   margin-top: 50px;
-  button{
+
+  button {
     background: none;
     border: 1px solid #ffffff7e;
     padding: 14px 20px;
@@ -168,9 +201,10 @@ h1{
     color: #ffffffba;
     border-radius: 30px;
     transition: letter-spacing 0.3s ease, font-weight 0.3s ease;
-    
+
   }
 }
-.top-button button:hover{
+
+.top-button button:hover {
   letter-spacing: 3px;
 }
